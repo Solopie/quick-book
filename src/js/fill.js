@@ -1,0 +1,22 @@
+chrome.storage.local.get("formData", ({ formData }) => {
+  $("#first_name").val(formData.first_name);
+  $("#last_name").val(formData.last_name);
+  $("#email").val(formData.email).change();
+  $("#password").val(formData.password);
+  $("#gender").val(formData.gender);
+  $("#dob_day").val(formData.dob_day);
+  $("#dob_month").val(formData.dob_month);
+  $("#dob_year").val(formData.dob_year);
+  $("#street").val(formData.street);
+  $("#suburb").val(formData.suburb);
+  $("#state").val(formData.state);
+  $("#postcode").val(formData.postcode);
+  $("#home_phone").val(formData.home_phone);
+  $("#terms").prop('checked', true);
+  $("#name_on_card").val(formData.name_on_card);
+  $("#credit_card_number").val(formData.credit_card_number);
+  $("#expiry_month").val(formData.expiry_month);
+  $("#expiry_year").val(formData.expiry_year);
+  $("#cvv_number").val(formData.cvv_number);
+  $("#confirm_submit").click();
+});
